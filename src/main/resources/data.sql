@@ -1,8 +1,8 @@
 -- user
-INSERT INTO user(id, user_name, email, created, memo)
+INSERT INTO "user"(id, user_name, email, created, memo)
 VALUES (1, 'User 1', 'user1@example.com', '2020-01-20 08:34:19', null);
 
-INSERT INTO user(id, user_name, email, created, memo)
+INSERT INTO "user"(id, user_name, email, created, memo)
 VALUES (2, 'User 2', 'user2@example.com', '2019-11-03 14:10:35', 'MEMO2');
 
 -- inquiry

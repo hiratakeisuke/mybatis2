@@ -1,5 +1,5 @@
 -- ユーザー
-CREATE TABLE user
+CREATE TABLE "user"
 (
    id INT NOT NULL AUTO_INCREMENT,
    user_name VARCHAR(100) NOT NULL,
@@ -19,7 +19,7 @@ CREATE TABLE inquiry
     created DATETIME NOT NULL,
     PRIMARY KEY(id),
     CONSTRAINT fk_inquiry_user
-        FOREIGN KEY (user_id) REFERENCES user (id)
+        FOREIGN KEY (user_id) REFERENCES "user" (id)
 );
 
 CREATE TABLE inquiry_tag
